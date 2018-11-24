@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="/mygrid.css">
+  <link rel="manifest" href="manifest.json">
+  <meta name="mobile-web-app-capable" content="yes">
+  <title>MWS II</title>
+</head>
+<body>
+  <div></div>
+  <div class="container">
+    <div class="menu">
+      <img src="img/batman.png" class="logomenu">
+    </div>
+    <div class="header">
+      <h1>Tugas MWS Batch II ke-1</h1>
+    </div>
+    <div class="sidebar">
+      <img src="img/potraitbatman.jpg" alt="" class="circle potrait">
+      <h3 style="text-align: center;">I am Batman</h3>
+    </div>
+    <div class="konten">
+      <div class="subkonten">
+        <h2>Project 1</h2>
+        <p>Sub konten pertama adalah menghitung dua angka dengan menggunakan jQuery, baik itu penjumlahan, pengurangan, perkalian, maupun pembagian.</p>
+        <p><a href="kalkulator/index.html">klik disini</a></p>
+      </div>
+      <div class="subkonten">
+        <h2 class="center">Project 2</h2>
+        <p>Sub konten kedua merupakan link untuk menampilkan peta menggunakan Leaflet Mapbox.</p>
+        <p><a href="mapbox/index.html">klik disini</a></p>
+      </div>
+      <div class="subkonten">
+        <h2 class="center">Project 3</h2>
+        <p>Sub konten ketiga adalah pengenalan fetch json pada javscript.</p>
+        <p><a href="fetchjson/index.html">klik disini</a></p>
+      </div>
+    </div>
+    <div class="footer">
+      <div class="wrapper">
+        <div class="left">
+            Copyright &copy; 2018. All rights reserved.
+          </div>
+      </div>
+    </div>
+  </div>
+  <script>
+    if('serviceWorker' in navigator){
+      // jika broser support serviceworker
+      navigator.serviceWorker
+        .register('/sw.js')
+        .then(function(){
+          console.log('service worker is registered');
+        });
+    }
+  </script>
+</body>
+</html>

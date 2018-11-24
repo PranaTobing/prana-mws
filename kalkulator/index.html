@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../mygrid.css">
+  <title>MWS II</title>
+</head>
+<body>
+  <div>
+    <div><h2>Menghitung 2 angka</h2></div>
+    <div>
+      <table>
+        <tbody>
+          <tr>
+            <td>
+                <input type="text" id="textNmbr1" placeholder="FirstNumber" class="table-input">
+            </td>
+            <td>
+              <select id="operator" class="table-input">
+                <option value="+">Tambah (+)
+                <option value="-">Kurang (-)
+                <option value="*">Kali (*)
+                <option value="/">Bagi (/)
+              </select>
+            </td>
+            <td>
+                <input type="text" id="textNmbr2" placeholder="SecondNumber" class="table-input">
+            </td>
+            <td><h3>=</h3></td>
+            <td>
+                <input type="text" id="textNmbr3" class="table-input" disabled>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <div>
+      <a href="../index.html">
+        Back to Home
+      </a>
+    </div>
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="hitungangka.js"></script>
+</body>
+</html>
